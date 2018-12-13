@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Php Alused -väljund</title>
+    <title>Php Alused väljund</title>
 </head>
     <body>
     <h4>Väljastus</h4>
