@@ -4,7 +4,7 @@
 
 $taisArv = 7;
 $reaalArv = 3.14;
-$sone = 'kodu';
+$sone = '7';
 $toevaartusTrue = true;
 $toevaartusFalse = false;
 
@@ -14,3 +14,6 @@ echo 'sõne = '.$sone.'<br>';
 echo 'Tõde = '.$toevaartusTrue.'<br>';
 echo 'Väär = '.$toevaartusFalse.'<br>';
 
+echo gettype($sone).'<br>';
+settype($sone, 'int');
+echo gettype($sone);
