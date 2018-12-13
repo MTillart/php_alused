@@ -2,18 +2,25 @@
 //muutuja defineerja
 //$muutujaNimi = väärtus;
 
-$taisArv = 7;
-$reaalArv = 3.14;
-$sone = '7';
-$toevaartusTrue = true;
-$toevaartusFalse = false;
+$arv1 = 7;
+$arv2 = 24;
 
-echo 'täisarv = '.$taisArv.'<br>';
-echo 'Reaalarv = '.$reaalArv.'<br>';
-echo 'sõne = '.$sone.'<br>';
-echo 'Tõde = '.$toevaartusTrue.'<br>';
-echo 'Väär = '.$toevaartusFalse.'<br>';
 
-echo gettype($sone).'<br>';
-settype($sone, 'int');
-echo gettype($sone);
+echo '<h4>Matemaatikalised operaatorid</h4>';
+echo $arv1.'+'.$arv2.' = '.($arv1 + $arv2).'<br>';
+echo $arv1.'-'.$arv2.' = '.($arv1 - $arv2).'<br>';
+echo $arv1.'*'.$arv2.' = '.($arv1 * $arv2).'<br>';
+echo $arv1.'/'.$arv2.' = '.($arv1 / $arv2).'<br>';
+echo $arv1.'%'.$arv2.' = '.($arv1 % $arv2).'<br>';
+
+echo '<hr>';
+
+echo '<h4>Võrdlus operaatorid<h4>';
+
+echo $arv1.'<'.$arv2.' see on '.($arv1 < $arv2).'<br>';
+echo $arv1.'>'.$arv2.' see on '.($arv1 > $arv2).'<br>';
+echo $arv1.'<='.$arv2.' see on '.($arv1 <= $arv2).'<br>';
+echo $arv1.'>='.$arv2.' see on '.($arv1 >= $arv2).'<br>';
+echo $arv1.'=='.$arv2.' see on '.($arv1 == $arv2).'<br>';
+echo $arv1.'!='.$arv2.' see on '.($arv1 != $arv2).'<br>';
+
