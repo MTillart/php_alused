@@ -8,7 +8,7 @@
 
 echo '<h4>Tingimuslaused</h4>';
 
-$foor = 'kollane';
+$foor = 'sinine';
 
 switch ($foor) {
     case 'punane':
