@@ -32,13 +32,19 @@ for($rida = 1; $rida <= 6; $rida++) {
     echo '</tr>';
 }
  echo '<hr>';
-echo '<table>';
-for($arv1 = 1; $arv1 <= 10; $arv1++){
-    echo '<tr>';
+echo '<table style="border-collapse: collapse">';
+echo '<th style="width: 20px; text-align: center; background: aquamarine">'&nbsp'</th>';
+for($arv2 = 0; $arv2 <= 10; $arv2++){
+    if($arv2 == 0){
+        $txt = 'nbsp;';
+    }else{
+        $txt = $arv2;
+    }
     echo '<th style="width: 20px; text-align: center; background: aquamarine">';
     echo $arv1;
     echo '</th>';
-    for($arv2 = 1; $arv2 <= 10; $arv2++){
+    for($arv1 = 1; $arv1 <= 10; $arv1++){
+        echo '<tr>';
         echo '<td style="width: 20px; text-align: center;">';
         echo $arv1 * $arv2.'</td>';
     }
