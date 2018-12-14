@@ -15,7 +15,7 @@ for($arv = 1; $arv <= 10; $arv++){
     echo '<p style="color: '.$arv.'">'.$arv.'</p>';
 }*/
 
-$varv = '#';
+/*$varv = '#';
 echo '<table>';
 for($rida = 1; $rida <= 6; $rida++) {
     $varv = $varv.rand(0,9).rand(0,9).rand(0,9);
@@ -34,15 +34,14 @@ for($rida = 1; $rida <= 6; $rida++) {
  echo '<hr>';
 echo '<table style="border-collapse: collapse">';
 echo '<th style="width: 20px; text-align: center; background: aquamarine">'&nbsp'</th>';
-for($arv2 = 0; $arv2 <= 10; $arv2++){
-    if($arv2 == 0){
-        $txt = 'nbsp;';
-    }else{
-        $txt = $arv2;
-    }
+for($arv2 = 0; $arv2 <= 10; $arv2++) {
+    $txt = ($arv2 == 0) ? '&nbsp;' : $arv2;
+
     echo '<th style="width: 20px; text-align: center; background: aquamarine">';
-    echo $arv1;
+    echo $txt;
     echo '</th>';
+}
+echo '<th style="width: 20px; text-align: center; background: aquamarine">'&nbsp'</th>';
     for($arv1 = 1; $arv1 <= 10; $arv1++){
         echo '<tr>';
         echo '<td style="width: 20px; text-align: center;">';
@@ -50,5 +49,21 @@ for($arv2 = 0; $arv2 <= 10; $arv2++){
     }
     echo '</tr>';
 }
-echo '</table>';
+echo '</table>';*/
 
+echo '<hr>';
+
+$arv = 123;
+$numbriteSumma = 0;
+while ($arv != 0){
+    $number = $arv % 10;
+    echo 'Number = '.$number. '<br>';
+    //valmistame arv järgmiseks tükli sammuks
+    $arv = $arv / 10;
+    settype($arv,int);
+    echo 'Uus arv on '.$arv.'<br>';
+    //leiame ke hetkel oleva summa
+    $numbriteSumma = $numbriteSumma + $number;
+    echo 'hetkel summa ='.$numbriteSumma.'<br>';
+}
+echo '<b>Lõplik summa = '.$numbriteSumma.'<br></b>';
