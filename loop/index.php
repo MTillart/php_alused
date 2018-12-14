@@ -67,3 +67,18 @@ while ($arv != 0){
     echo 'hetkel summa ='.$numbriteSumma.'<br>';
 }
 echo '<b>Lõplik summa = '.$numbriteSumma.'<br></b>';
+
+echo '<hr>';
+$arv = 4451255415;
+//leia mitu korda siin esineb number 5;
+
+$numberKokku = 0;
+while($arv != 0) {
+    $number = $arv % 10;
+    if($number == 5) {
+        $numberKokku = $numberKokku + 1;
+    }
+    $arv = $arv / 10;
+    settype($arv, int);
+}
+echo 'Number 5 esineb '.$numberKokku.' korda<br>';
