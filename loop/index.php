@@ -31,4 +31,18 @@ for($rida = 1; $rida <= 6; $rida++) {
     }
     echo '</tr>';
 }
+ echo '<hr>';
+echo '<table>';
+for($arv1 = 1; $arv1 <= 10; $arv1++){
+    echo '<tr>';
+    echo '<th style="width: 20px; text-align: center; background: aquamarine">';
+    echo $arv1;
+    echo '</th>';
+    for($arv2 = 1; $arv2 <= 10; $arv2++){
+        echo '<td style="width: 20px; text-align: center;">';
+        echo $arv1 * $arv2.'</td>';
+    }
+    echo '</tr>';
+}
+echo '</table>';
 
