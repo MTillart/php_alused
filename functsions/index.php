@@ -29,3 +29,17 @@ $num = -321;
 $newnum = abs($num);
 echo $newnum;
 echo '<hr>';
+
+function bigUniverse(){
+    echo'<h1>UNIVERSE!</h1>';
+}
+bigUniverse();
+echo '<hr>';
+function printBR($txt) {
+   print ("$txt<br>\n");
+}
+printBR('this is a universe');
+printBR('this is a new universe');
+printBR('this is a yet another universe');
+echo '<hr>';
+
