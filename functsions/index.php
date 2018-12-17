@@ -49,5 +49,10 @@ function addNums($firstnum, $secondnum){
 }
 print addNums(3, 5);
 echo '<hr>';
-
+function sayUniverse(){
+    print "Universe<br>";
+}
+$hold_func = "SayUniverse";
+$hold_func();
+echo '<hr>';
 
