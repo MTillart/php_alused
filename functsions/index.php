@@ -24,3 +24,8 @@ numbriKordumine(4515454511, 1);
 numbriKordumine(51444441521, 4);
 numbriKordumine(1112121, 1);
 
+echo '<hr>';
+$num = -321;
+$newnum = abs($num);
+echo $newnum;
+echo '<hr>';
