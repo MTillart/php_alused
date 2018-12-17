@@ -69,9 +69,9 @@ function meaningOfLife(){
 meaningOfLife();
 echo '<hr>';
 
-$num_of_calls = 0;
 function andAnother($txt){
-    global $num_of_calls;
+    static $num_of_calls = 0;
+    $num_of_calls;
     $num_of_calls++;
     echo "<h3>$num_of_calls. $txt</h3>";
 }
