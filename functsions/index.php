@@ -59,3 +59,11 @@ function test() {
     $testvaraible ="this is a test variable";
     }
 echo "test variable: $testvaraible";
+echo '<hr>';
+
+$life = 'to live';
+function meaningOfLife(){
+    global $life;
+    print "Te meaning of life is $life<br>";
+}
+meaningOfLife();
