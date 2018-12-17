@@ -43,3 +43,11 @@ printBR('this is a new universe');
 printBR('this is a yet another universe');
 echo '<hr>';
 
+function addNums($firstnum, $secondnum){
+   $result = $firstnum + $secondnum;
+   return $result;
+}
+print addNums(3, 5);
+echo '<hr>';
+
+
