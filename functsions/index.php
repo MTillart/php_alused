@@ -55,4 +55,7 @@ function sayUniverse(){
 $hold_func = "SayUniverse";
 $hold_func();
 echo '<hr>';
-
+function test() {
+    $testvaraible ="this is a test variable";
+    }
+echo "test variable: $testvaraible";
