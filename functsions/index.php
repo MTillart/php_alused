@@ -67,3 +67,16 @@ function meaningOfLife(){
     print "Te meaning of life is $life<br>";
 }
 meaningOfLife();
+echo '<hr>';
+
+$num_of_calls = 0;
+function andAnother($txt){
+    global $num_of_calls;
+    $num_of_calls++;
+    echo "<h3>$num_of_calls. $txt</h3>";
+}
+andAnother('Animals');
+echo 'Living and breathing with us';
+andAnother(Birds);
+echo 'Wings flapping all around';
+echo '<hr>';
