@@ -2,8 +2,8 @@
 $kasutajad = array();//tühi massiiv
 //andmete lisamine
 $kasutajad[]= 'Alice';
-$kasutajad[]= 'Mice';
-array_push($kasutajad,'lucy');
+$kasutajad[]= 'Aice';
+array_push($kasutajad,'Aucy');
 
 $lisaKasutajad = array('Mup', 'Geene'); //andmetega massiiv
 
@@ -20,3 +20,9 @@ $uuedKasutajad = array_merge($kasutajad, $lisaKasutajad);
 for($i=0; $i< $kasutajadKokku; $i++){
     echo $uuedKasutajad[$i].'<br>';
 }
+echo '<hr>';
+
+foreach ($uuedKasutajad as $kasutaja){
+    echo $kasutaja.'<br>';
+}
+echo '<hr>';
