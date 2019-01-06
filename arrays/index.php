@@ -38,12 +38,12 @@ echo "$linnud[2]";
 echo '<br>';
 //Sidestatud massiiv
 $tegelane = array (
-    name=>"Voldemor",
-    occupation=>"wizard",
-    age=>"Unknown",
+    'name'=>"Voldemor",
+    'occupation'=>"wizard",
+    'age'=>"Unknown",
     'book series'=>"Harry Potter"
 );
-echo $tegelane[name];
+echo $tegelane['name'];
 
 
 
