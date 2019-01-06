@@ -119,5 +119,12 @@ foreach ($first as $val){
     print "$val<br>";
 }
 echo '<hr>';
-
+//Esimese elemedni kustuamine (array_shift)
+$an_array = array('a', 'b', 'c');
+while (count($an_array)){
+    $val = array_shift($an_array);
+    print "$val<br>";
+    print "there are ".count($an_array)." elements in \$an_array<br>";
+}
+echo '<hr>';
 
