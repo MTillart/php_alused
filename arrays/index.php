@@ -80,6 +80,9 @@ echo $mituTegelast[1]['name'];
 echo '<br>';
 echo $mituTegelast[2]['age'];
 echo '<br>';
+//Massiivi koht info hankimine-viimane element
+print $loomad[count($loomad)-1];
+echo '<br>';
 
 
 
