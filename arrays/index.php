@@ -90,6 +90,11 @@ echo '<hr>';
 foreach ($loomad as $val) {
     echo "$val<br>";//double jutumärgid on olulised
 }
-
+echo '<hr>';
+//Sidestatud massiivi läbivaatamine
+foreach ($tegelane2 as $key=>$val){
+    print "$key = $val<br>";
+}
+echo '<hr>';
 
 
