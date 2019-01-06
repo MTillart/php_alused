@@ -128,3 +128,11 @@ while (count($an_array)){
 }
 echo '<hr>';
 
+//Massiivi osa eraldamine (array_slice)
+$esimene = array ('a', 'b', 'c' , 'd', 'e', 'f');
+$teine = array_slice($esimene, 2, 3);
+foreach ($teine as $var ){
+    print "$var<br>";
+}
+echo '<hr>';
+
