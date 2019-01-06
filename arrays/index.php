@@ -80,10 +80,16 @@ echo $mituTegelast[1]['name'];
 echo '<br>';
 echo $mituTegelast[2]['age'];
 echo '<br>';
+echo '<hr>';
 //Massiivi koht info hankimine-viimane element
 print $loomad[count($loomad)-1];
 echo '<br>';
+echo '<hr>';
+///Massiivi läbivaatamine - FOREACH
 
+foreach ($loomad as $val) {
+    echo "$val<br>";//double jutumärgid on olulised
+}
 
 
 
