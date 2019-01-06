@@ -136,3 +136,10 @@ foreach ($teine as $var ){
 }
 echo '<hr>';
 
+//Massiivi sorteerimine (sort)
+$the_array = array('x', 'a', 'm', 'h');
+sort($the_array);
+foreach ($the_array as $var){
+    print "$var<br>";
+}
+echo '<hr>';
