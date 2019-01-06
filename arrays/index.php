@@ -96,5 +96,11 @@ foreach ($tegelane2 as $key=>$val){
     print "$key = $val<br>";
 }
 echo '<hr>';
-
+//Mitme mõõtmelise massiivi väljastamine
+foreach ($mituTegelast as $val){
+    foreach ($val as $key=>$final_val){
+        print "$key: $final_val<br>";
+    }
+    print "<br>";
+}
 
