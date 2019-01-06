@@ -41,10 +41,18 @@ $tegelane = array (
     'name'=>"Voldemor",
     'occupation'=>"wizard",
     'age'=>"Unknown",
-    'book series'=>"Harry Potter"
+    'series'=>"Harry Potter"
 );
 echo $tegelane['name'];
+echo '<br>';
 
+$tegelane2['name'] = 'Lara Croft';
+$tegelane2['occupation'] = 'Adventurer';
+$tegelane2['age'] = '26';
+$tegelane2['series'] = 'Tomb Raider';
+
+echo $tegelane2['series'];
+echo '<br>';
 
 
 
