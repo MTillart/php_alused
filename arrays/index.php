@@ -143,3 +143,9 @@ foreach ($the_array as $var){
     print "$var<br>";
 }
 echo '<hr>';
+//Sidestatud massiivi sorteerimine
+asort($tegelane2);
+foreach ($tegelane2 as $key=> $val){
+    print "$key = $val<br>";
+}
+echo '<hr>';
