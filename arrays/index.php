@@ -111,5 +111,13 @@ $third = array_merge($first, $second);
 foreach ($third as $val){
     print "$val<br>";
 }
+echo '<hr>';
+//Massiivi elementide lisamine (push)
+$total = array_push($first, 1, 2, 3);
+print "There are $total elements in \$first<p>";
+foreach ($first as $val){
+    print "$val<br>";
+}
+echo '<hr>';
 
 
