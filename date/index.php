@@ -35,3 +35,18 @@ echo "<br>";
 echo strtotime("yesterday");
 echo "<br>";
 echo strtotime("last Monday");
+echo "<hr>";
+//kuupäeva valideerimine
+if(checkdate(01,11,2013)){
+    echo('Kuupäev korras!');
+    }else{
+    echo ('Kuupäev on valesti sisestatud');
+}
+//Ülesanne 8
+echo "<hr>";
+echo "<h3>Ülesanne 8</h3>";
+echo date("d.m.Y G:i", time());
+$eesti_nadal = array(1=>'esmaspäev','teisipäev', 'kolmapäev', 'neljapäev', 'reede', 'laupäev', 'pühapäev');
+$nadal = $eesti_nadal[date('N')];
+echo "<br>";
+echo $nadal.' '.$paev.'.'.$kuu.' '.$aasta;
