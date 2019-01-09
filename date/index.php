@@ -50,3 +50,17 @@ $eesti_nadal = array(1=>'esmaspäev','teisipäev', 'kolmapäev', 'neljapäev', '
 $nadal = $eesti_nadal[date('N')];
 echo "<br>";
 echo $nadal.' '.$paev.'.'.$kuu.' '.$aasta;
+echo "<hr>";
+$now = time();
+$jaanipaev = strtotime("2019-06-24");
+$datediff = $jaanipaev - $now;
+
+$jaanini = round($datediff / (60 * 60 * 24));
+echo "2019 jaanipäevani on jäänud $jaanini päeva";
+echo '<br>';
+$my_birth = strtotime("1994-03-31");
+$your_birth = strtotime("1980-11-29");
+$birth_vahe = $my_birth - $your_birth;
+$tulemus = round($birth_vahe / (60 * 60 *24 * 365));
+echo "Vahe on $tulemus aastat";
+echo "<hr>";
