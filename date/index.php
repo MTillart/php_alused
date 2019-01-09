@@ -12,3 +12,13 @@ echo "<br>";
 //pika kuupäeva eestistamine
 echo date('d.F.Y');
 echo "<br>";
+echo "<hr>";
+//loome massiivi, et sinna siestada eesti keelsed kuupäevad
+//kuude massiic
+$eesti_kuud = array(1=>'jaanuar', 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember');
+//kuupäevad massiividesse
+$paev = date('d');
+$kuu = $eesti_kuud[date('n')];
+$aasta = date('Y');
+//kuupäeva väljastamine
+echo $paev.'.'.$kuu.' '.$aasta;
