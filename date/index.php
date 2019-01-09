@@ -22,3 +22,16 @@ $kuu = $eesti_kuud[date('n')];
 $aasta = date('Y');
 //kuupäeva väljastamine
 echo $paev.'.'.$kuu.' '.$aasta;
+echo "<hr>";
+//mktime(tunnid, minutid, sekundid, kuu, päev, aasta, suveaeg)
+$sp = mktime(0,0,0,10,29,1969);
+echo date('d.m.Y', $sp);
+echo "<br>";
+echo date('d.m.Y G:i' , time()+60);
+echo "<br>";
+$sp = mktime(0,0,0,10,29,1969+27);
+echo date('d.m.Y', $sp);
+echo "<br>";
+echo strtotime("yesterday");
+echo "<br>";
+echo strtotime("last Monday");
