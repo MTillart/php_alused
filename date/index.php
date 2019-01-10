@@ -64,3 +64,21 @@ $birth_vahe = $my_birth - $your_birth;
 $tulemus = round($birth_vahe / (60 * 60 *24 * 365));
 echo "Vahe on $tulemus aastat";
 echo "<hr>";
+if(checkdate(02,29,2016)){
+    echo('Kuupäev korras!');
+}else{
+    echo ('Antud kuupeva ei eksisteeri');
+}
+echo "<hr>";
+$vanus = round($my_birth/ (60 * 60 *24 * 365));
+echo 'Minu vanus praegu: '.$vanus;
+$vanus_next = $vanus+1;
+echo '<br>';
+if ($vanus_next == 30) {
+    echo('Sul on järgmine aasta juubel');
+    } elseif ($vanus_next== 25){
+    echo ('Sul järgmine aasta pooljuubel');
+    }else {
+        echo ('Sul ei ole järgmine aasta juubel');
+    }
+echo "<hr>";
