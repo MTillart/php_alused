@@ -82,3 +82,16 @@ if ($vanus_next == 30) {
         echo ('Sul ei ole järgmine aasta juubel');
     }
 echo "<hr>";
+
+$aeg = date("G.i");
+
+echo $aeg;
+
+echo "<br>";
+if ($aeg>8.00 AND $aeg<13.00){
+    echo "Tere ss";
+}elseif ($aeg>13.00 AND $aeg<17.00){
+    echo "Tere päevast";
+}else{
+    echo "Tere õhtust";
+}
