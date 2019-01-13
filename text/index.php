@@ -27,5 +27,17 @@ echo trim($tekst3, "I, n, !");
 echo '<br>';
 $tekst4 = "In the end, <b>We are what <a href='#'>we</a> </b><i>are</i>";
 echo strip_tags($tekst4, '<b>, <i>');
-
+//tekst kui massiiv
+echo '<br>';
+echo $tekst4[4];
+echo '<br>';
+echo substr($tekst4, 3, 5);
+echo '<br>';
+echo substr($tekst4, 4, -15);
+echo '<br>';
+print_r(str_word_count($tekst3,1));
+echo '<br>';
+$sona = str_word_count($tekst4,1);
+echo $sona[2];
+echo '<br>';
 
