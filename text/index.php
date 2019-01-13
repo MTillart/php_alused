@@ -40,4 +40,12 @@ echo '<br>';
 $sona = str_word_count($tekst4,1);
 echo $sona[2];
 echo '<br>';
+//Tekstist otsimine
+$otsitav = 'e';
+$nihe = 0;
+while ($leia_tekstist = strpos($tekst4, $otsitav, $nihe)){
+    echo $leia_tekstist."<br>";
+    $nihe = $leia_tekstist+strlen($otsitav);
+}
+echo '<br>';
 
