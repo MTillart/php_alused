@@ -25,7 +25,7 @@ echo '<br>';
 $tekst3 = "In the end, we are what we are!";
 echo trim($tekst3, "I, n, !");
 echo '<br>';
-$tekst4 = "In the end, <b>We are what <a href='#'>we</a> </b><i>are</i>";
+$tekst4 = "In the end, <b>we are what <a href='#'>we</a> </b><i>are</i>";
 echo strip_tags($tekst4, '<b>, <i>');
 //tekst kui massiiv
 echo '<br>';
@@ -43,9 +43,23 @@ echo '<br>';
 //Tekstist otsimine
 $otsitav = 'e';
 $nihe = 0;
-while ($leia_tekstist = strpos($tekst4, $otsitav, $nihe)){
+while ($leia_tekstist = strpos($tekst3, $otsitav, $nihe)){
     echo $leia_tekstist."<br>";
     $nihe = $leia_tekstist+strlen($otsitav);
 }
 echo '<br>';
+//teksti asendamine
+$asendus = 'you';
+$otsitav = 'we';
+//$otsitava_algus = 12;
+//$otsitava_pikkus = 2;
+$nihe1 = 12;
+$asenduse_algus = strpos($tekst3, $otsitav, $nihe1);
+$asenduse_markide_arv = strlen($otsitav);
+echo substr_replace($tekst3, $asendus, $asenduse_algus, $asenduse_markide_arv);
+echo '<br>';
+$tekst5 = "Musta lehma saba musta lehma taga, valge lehma saba valge lehma taga";
+$otsi = array('lehma', 'saba', 'taga');
+$asenda = array('koera', 'nina', 'ees');
+echo str_replace($otsi, $asenda, $tekst5);
 
