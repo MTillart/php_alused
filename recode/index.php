@@ -2,9 +2,9 @@
 ?>
 <menu>
     <a href="index.php">Siin me oleme</a>
-    <a href="kompass.php">Kompass</a>
-    <a href="raamat.php">Raamat</a>
-    <a href="oksaraas.php">Oksaraas</a>
+    <a href="index.php?leht=kompass">Kompass</a>
+    <a href="index.php?leht=raamat">Raamat</a>
+    <a href="index.php?leht=oksaraas">Oksaraas</a>
 </menu>
 <?php
 if(!empty($_GET['leht'])){
